@@ -19,10 +19,10 @@ function panel(){
     remove.id = "remove";
     remove.innerText = "Remove"
     remove.addEventListener("click", function(){
-        idList.removeChild(toDoData)
+        idList.removeChild(toDoData);
+        idList.classList.remove('idListStyle');
     })
     
-    idList.classList.add('idListStyle');
     toDoData.appendChild(textData);
     toDoData.appendChild(remove);
     idList.appendChild(toDoData);
