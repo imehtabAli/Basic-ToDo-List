@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color: #b9b0cf;
+}
+
+.add-toDo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    /* border: 2px solid red; */
+}
+
+.addData {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 23rem;
+    height: 4rem;
+    border-radius: .4rem;
+    padding: .4em;
+    display: flex;
+    align-items: center;
+}
+
+.addData input {
+    padding: .6em;
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    width: 12rem;
+    transition: width 0.3s ease;
+    font-size: .96rem;
+}
+
+.inputDiv {
+    border-right: 1px solid grey;
+    padding: .6rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.addData input:focus {
+    background-color: rebeccapurple;
+    color: white;
+    width: 16rem;
+    transition: width 0.3s ease;
+}
+
+#addDataButton {
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    border-radius: .3rem;
+    margin-left: .7em;
+    font-size: .96rem;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+#addDataButton:hover {
+    background-color: #7651d4;
+}
+
+.dataAdded-toDo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    height: auto;
+}
+
+.idListStyle {
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: .5rem 0;
+    background: rgba(255, 255, 255, 0.13);
+box-shadow: 0 2px 12px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+}
+
+@media screen and (max-width: 676px) {
+    #idList{
+        width: 100%;
+    }
+}
+
+#idList::-webkit-scrollbar {
+    width: .8rem;
+}
+
+#idList::-webkit-scrollbar-track {
+    background: rebeccapurple;
+    border-radius: 1rem;
+}
+
+#idList::-webkit-scrollbar-thumb {
+    background: #8661e4;
+    border-radius: .4rem;
+}
+
+#idList::-webkit-scrollbar-thumb:hover {
+    background: #9079cc;
+}
+
+.toDoData{
+    padding: 1rem;
+    box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .2rem 0;
+    width: 100%;
+    
+}
+
+#remove{
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    border-radius: .3rem;
+    margin-left: .7em;
+    font-size: .96rem;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+#remove:hover{
+    background-color: #7651d4;
+}
+
+.textData{
+    width: 20rem;
+    cursor: pointer;
+    width: 70%;
+}
