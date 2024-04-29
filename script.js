@@ -22,7 +22,7 @@ function panel(){
         idList.removeChild(toDoData);
         idList.classList.remove('idListStyle');
     })
-    
+    idList.classList.add('idListStyle');
     toDoData.appendChild(textData);
     toDoData.appendChild(remove);
     idList.appendChild(toDoData);
